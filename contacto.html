@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Servicios</title>
+<!--  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body class="paginas-internas">
+    <section class="bienvenido py-4">
+      <header class="encabezado navbar fixed-top">
+        <div class="container">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Logo del Sitio">
+          </a>
+          <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false"><i class="fas fa-search"></i></button>
+          
+          <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-emcabezado" aria-expanded="false"><i class="fas fa-bars"></i></button>
+          
+          
+          <form action="#" class="collapse" id="bloque-buscar" >
+              <div class="contenedor-bloque-buscar">
+                          <input type="text" placeholder="Buscar...">
+                          <input type="submit" value="Buscar">
+              </div>
+          </form>
+          
+
+          <nav class="collapse" id="menu-emcabezado">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li class="active"><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="texto-bienvenida container text-center">
+        <h1 class="display-4">Contacto</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </section>
+    <section class="ruta text-right py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <a href="index.html">Inicio</a> >> Contacto
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Formulario de contacto</h2>
+            <form>
+              <div class="form-group row">
+                <label for="nombre" class="col-md-4 col-form-label">Nombre</label>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre..." data-toggle="tooltip" data-placement="top" title="Ingrese su nombre">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-md-4 col-form-label">Email</label>
+                <div class="col-md-8">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email..." data-toggle="tooltip" data-placement="top" title="Ingrese su email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="mensaje" class="col-md-4 col-form-label">Mensaje</label>
+                <div class="col-md-8">
+                  <textarea class="form-control" name="mensaje" id="mensaje" rows="5" data-toggle="tooltip" data-placement="top" title="Ingrese un mensaje"></textarea>
+                </div>
+              </div>
+
+              <div class="col-md-8 offset-md-4">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+              </div>
+              
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h2>Detalles de contacto</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos sit cupiditate iusto accusantium tempora delectus numquam dolore rem voluptatibus, neque doloribus dolorem nisi corporis doloremque impedit itaque ducimus placeat, deleniti!</p>
+          </div>
+        </div>
+      </div>
+    </main>    
+    <footer class="piePagina py-1" role="contentinfo">
+      <div class="container">
+        <p>2019 Todos los derechos reservados</p>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <a href="#" class="ir-arriba"><i class="fa fa-arrow-circle-up"></i></a>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript">
+      $(function () {$('[data-toggle="tooltip"]').tooltip()})
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

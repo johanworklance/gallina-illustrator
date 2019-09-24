@@ -1,0 +1,525 @@
+
+
+:root{
+    --texto: #212121;
+    --principal:#efe459;
+    --secundario:#ad8a18;
+}
+html{
+	font-size: 15px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:var(--texto);
+}
+.bienvenido{
+    background: url(../images/fondo-header.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed !important;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.encabezado{
+	background-color:var(--texto);
+	color:#fff;
+    padding: .5rem 0;
+    transition: all .5s ease;
+}
+.encabezado.fondo-menu{
+    padding: .8rem 0;
+    background-color: #847d2c;
+}
+.encabezado .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.encabezado .logo img{
+    width: 150px;
+    height: auto;
+}
+.boton-menu, .boton-buscar{
+    margin: 0;
+    border: 0;
+    font-size: 2rem;
+    background: transparent;
+    color: #fff;
+    padding: 0 .5rem;
+}
+.boton-menu:focus, .boton-buscar:focus {
+    outline: none;
+}
+.boton-buscar{
+    margin-left: auto;/*si le damos automatico a un hijo flexible a alguno de sus margenes, tomara todo el ancho disponible*/
+    margin-right: .8rem;
+}
+#bloque-buscar{
+    flex: 1 1 100%;
+}
+.contenedor-bloque-buscar{
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+}
+.contenedor-bloque-buscar input:first-child{
+    border: 0;
+    padding: 1rem;
+    border-radius: 5px 0 0 5px;
+    flex:1;
+}
+.contenedor-bloque-buscar input[type='submit']{
+    flex: 0 1 auto;
+    padding: 0 1rem;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--principal);
+}
+#menu-emcabezado{
+    flex: 1 1 100%;
+}
+#menu-emcabezado ul {
+    margin: .8rem 0 0 0;
+    list-style: none;
+    padding: 0;
+}
+#menu-emcabezado ul li a{
+    display: block;
+    text-align: center;
+    padding:.8rem 0;
+    color: #fff;
+    border-top: 1px solid #4b4a4a;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#menu-emcabezado ul li a:hover, #menu-emcabezado ul li.active a{
+    color: var(--principal);
+}
+.texto-bienvenida h1{
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+.texto-bienvenida a{
+    color: #000;
+    background-color: var(--principal);
+    border-color: transparent;
+    box-shadow: none !important;
+    transition: all .5s ease;
+    margin-top: 1rem;
+}
+.btn-primary{
+    color: #000;
+    background-color: var(--principal);
+    border-color: transparent;
+    box-shadow: none !important;
+    transition: all .5s ease;
+}
+.texto-bienvenida a:hover,.texto-bienvenida a:focus,.texto-bienvenida a:active, .btn-primary:hover{
+    background-color: var(--secundario) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+.boton-bajar a{
+    color: #fff;
+    font-size: 3rem;
+    animation: flecha-animada 2s ease-in-out infinite;
+    display: inline-block;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+@keyframes flecha-animada{
+    from{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(6px);
+    }
+    to{
+        transform: translateY(0);
+    }
+    
+}
+
+/*------------------
+//Agencia
+//------------------*/
+
+.agencia{
+    background-color: var(--secundario);
+    color: #000;
+    
+}
+.agencia img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.agencia div[class*="col-md-4"]{
+    display: flex;
+}
+
+/*------------------
+//Tu mejor eleccion
+//------------------*/
+
+.mejor-eleccion ul{
+    list-style: none;
+}
+.mejor-eleccion h2 span{
+    color: var(--secundario);
+}
+.mejor-eleccion ul li .fas{
+    font-size: 2rem;
+    background: #ad8a18;
+    padding: 1.5rem;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    line-height: 0;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.mejor-eleccion ul li h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+}
+.mejor-eleccion ul li{
+    min-height: 10rem;
+    
+    margin-bottom: 0.3rem;
+}
+/*------------------
+//Servicios
+//------------------*/
+.servicios{
+    background: url("../images/fondo-servicios.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed !important;
+    color: white;
+}
+.servicios article{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.servicios article img{
+    flex: 0 0 60px;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+.servicios h3{
+    margin:0;
+    font-size: 1.1rem;
+    color: white;
+    flex: 1 1 auto;
+}
+.servicios h3 a{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.servicios h3 a::after{
+    content: '\f105';
+    font-family: FontAwesome;
+    font-size: 3rem;
+    margin-left: 1rem;
+    opacity: .5;
+    position: relative;
+    left: 0;
+    transition: all .5s ease; 
+}
+.servicios h3 a:hover::after{
+    
+    left: -.5rem;
+    opacity: 1;
+    color: var(--principal);
+}
+/*------------------
+//Ultimos Proyectos
+//------------------*/
+
+.proyectos a{
+    text-decoration: none;
+}
+.proyectos a h4{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--texto);
+    text-align: center;
+}
+.proyectos .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.proyectos .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin: .3rem 0;
+    outline: 0;
+}
+.proyectos .owl-prev, 
+.proyectos .owl-next {
+    font-size: 3rem !important;
+    margin: 0 1rem;
+    color: var(--secundario)!important;
+    transition: all .5s ease;
+    outline: 0;
+}
+.proyectos .owl-prev:hover, 
+.proyectos .owl-next:hover {
+    color: var(--principal)!important;
+}
+/*------------------
+//Pie de Página
+//------------------*/
+.piePagina{
+    background-color: var(--texto);
+    text-align: center;
+    color:  #fff;
+    font-size: .9rem;
+}
+.piePagina ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.piePagina ul a{
+    margin: 0 .5rem;
+    color: #fff;
+    opacity: .7;
+    transition: all .5s ease;
+    font-size: 2rem;
+}
+.piePagina ul a:hover{
+    opacity: 1;
+}
+.ir-arriba{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    line-height: 0;
+    font-size: 2rem;
+    color: var(--principal);
+    transition: all .5s ease;
+    text-decoration: none;
+    z-index: 99999;
+    display: none;
+}
+.ir-arriba:hover,
+.ir-arriba:focus{
+    outline: 0;
+    color: #fff;
+}
+/*---------------------
+    Paginas Internas
+---------------------*/
+.paginas-internas .ruta {
+    background: var(--principal);
+    color: #fff;
+}
+.paginas-internas .ruta a{
+    color: #fff;
+    text-decoration: underline;
+}
+.paginas-internas .ruta a:hover{
+    text-decoration: none;
+}
+.paginas-internas .accordion a {
+    background-color: var(--secundario);
+    padding: 1rem;
+    font-size: 1rem;
+    display: block;
+    border-radius: 5px;
+    color: #fff;
+    margin: 2px 0;
+    transition: all 1s ease;
+}
+.paginas-internas .accordion a:hover{
+    color:#000;
+    background-color: var(--principal);
+}
+/*---------------------
+    servicios.html
+---------------------*/
+.paginas-internas .lista-servicios{
+    background: var(--secundario);
+}
+.lista-servicios article {
+    background: #fff;
+    text-align: center;
+    border: 5px solid #765e0c;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.lista-servicios article .btn{
+        color: #000;
+        background-color: var(--principal);
+        border-color: transparent;
+        box-shadow: none !important;
+        transition: all .5s ease;
+        margin-top: auto;
+    }
+.lista-servicios article .btn:hover{
+    background-color: var(--secundario) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+.lista-servicios article .fas{
+    font-size: 5rem;
+    color: var(--principal);
+    margin-bottom: .5rem;
+    transition: all 1s ease;
+}
+.lista-servicios article:hover .fas{
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+    
+}
+
+/*---------------------
+    Media Queries
+---------------------*/
+@media (min-width: 768px){
+    #menu-emcabezado{
+        display: block;
+        flex:0 1 auto;
+        order:0;
+        margin-left: auto;
+    }
+    #menu-emcabezado ul{
+        display: flex;
+        margin: 0;
+    }
+    #menu-emcabezado ul li a{
+        text-transform: capitalize;
+        padding: 0 .8rem;
+        margin: 0 .3rem;
+        border-top: none;
+        border-bottom: 4px solid transparent;
+        transition: all 1s ease; 
+    }
+    #menu-emcabezado ul li.active a,
+    #menu-emcabezado ul li a:hover{
+        border-bottom: 4px solid var(--principal);
+        color: var(--principal);
+    }
+    .boton-buscar{
+        order: 1;
+        margin-left: 1rem;
+        margin-right: 0px;
+    }
+    #bloque-buscar{
+        order:2;
+        position: absolute;
+        right:3rem;
+        top: 2.5rem;
+    }
+    .contenedor-bloque-buscar{
+        border:1px solid #000;
+        border-radius: 5px;
+    }
+    .bienvenido .container{
+        position: relative;
+    }
+    .servicios article {
+        flex-direction: column;
+        text-align: center;
+    }
+    .servicios article img {
+        flex: 0 0 150px;
+        margin-bottom: .5rem;
+        margin-right: 0px;
+        transition: all 1s ease;
+    }
+    .servicios article:hover img{
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+    }
+    .servicios h3 a{
+        display: block;
+        width: 100%;
+    }
+    .servicios article p{
+        width: 100%;
+    }
+    .servicios h3 a::after {
+        display: none;
+    }
+    .servicios h3 {
+        font-size: 1.5rem;
+        flex: 0 1 auto;
+        margin-bottom: .5rem;
+    }
+    .servicios article .btn{
+        color: #000;
+        background-color: var(--principal);
+        border-color: transparent;
+        box-shadow: none !important;
+        transition: all .5s ease;
+        margin-top: auto;
+    }
+    .servicios article .btn:hover,.servicios article .btn:focus,.servicios article .btn:active{
+        background-color: var(--secundario) !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+    }
+    /*servicios.html*/
+    .lista-servicios .col-md-4{
+        display: flex;
+    }
+    .lista-servicios .col-md-4 article{
+        display: flex;
+        flex-direction: column;
+    }
+    .lista-servicios article .btn{
+        margin-top: auto;
+    }
+}
+@media (min-width: 992px){
+    html{
+        font-size: 16px;
+    }
+    .bienvenido{
+    background: url(../images/fondo-header-grande.jpg) no-repeat center top;
+    background-size: cover;
+    }
+    .servicios{
+    background: url("../images/fondo-servicios-grande.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    }
+    .mejor-eleccion ul li {
+        display: flex;
+        max-height: 11.5rem;
+    }
+    .mejor-eleccion ul li h4{
+        margin: 0;
+    }
+    .mejor-eleccion ul li .fas{
+        margin-right: 1rem;
+        transition: all 1s ease;
+    }
+    .mejor-eleccion ul li:hover .fas{
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+        background: var(--principal);
+    }
+
+    .mejor-eleccion ul:first-child .fas{
+        order: 1;
+        margin-right: 0px;
+        margin-left: 1rem;
+
+    }
+}
+
